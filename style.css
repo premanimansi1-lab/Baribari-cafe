@@ -211,6 +211,7 @@
     .btn-primary {
         background: var(--secondary);
         color: var(--dark);
+        padding: 14px 32px;
     }
 
     .btn-primary:hover {
@@ -755,9 +756,9 @@
     font-weight:bold;
     }
 
-    /* .order-btn{
+    .order-btn{
     display:inline-block;
-    margin:10px 90px;
+    margin:10px 10px;
     padding:10px 18px;
     background:#25D366;
     color:white;
@@ -770,7 +771,7 @@
 
     .order-btn:hover{
     background:#1ebe5d;
-    } */
+    }
 
     .whatsapp-float{
     position:fixed;
