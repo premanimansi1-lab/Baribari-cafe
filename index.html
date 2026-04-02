@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bean Haven Cafe - Premium Coffee Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2><i class="fas fa-coffee"></i> Bari Bari</h2>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-page="home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#menu" class="nav-link" data-page="menu">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-page="about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-page="contact">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home" class="page active">
+        <!-- Hero Section -->
+        <div class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title animate-slide-up">Bari Bari Cafe</h1>
+                <p class="hero-subtitle animate-slide-up delay-1">Discover the art of perfect coffee in a cozy atmosphere</p>
+                <div class="hero-buttons animate-slide-up delay-2">
+                    <a href="menu.html" class="btn btn-primary">View Menu</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-coffee"></i>
+                    <span>Fresh Brewed</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Featured Items -->
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title animate-fade-in">Featured Items</h2>
+                <div class="featured-grid">
+                    <div class="featured-card animate-slide-up delay-1">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=400&h=300&fit=crop" alt="Espresso">
+                        <div class="card-content">
+                            <h3>Classic Espresso</h3>
+                            <p>Rich, bold flavor with perfect crema</p>
+                            <div class="price">$4.50</div>
+                        </div>
+                    </div>
+                    <div class="featured-card animate-slide-up delay-2">
+                        <img src="https://images.unsplash.com/photo-1512568400610-42b9a812f320?w=400&h=300&fit=crop" alt="Latte">
+                        <div class="card-content">
+                            <h3>Velvet Latte</h3>
+                            <p>Smooth espresso with steamed milk</p>
+                            <div class="price">$5.25</div>
+                        </div>
+                    </div>
+                    <div class="featured-card animate-slide-up delay-3">
+                        <img src="https://images.unsplash.com/photo-1517959105821-eb3982 steeplechase?w=400&h=300&fit=crop" alt="Croissant">
+                        <div class="card-content">
+                            <h3>Butter Croissant</h3>
+                            <p>Flaky, golden perfection</p>
+                            <div class="price">$3.75</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Menu Page -->
+    <section id="menu" class="page">
+      
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Our Menu</h2>
+              <div class="menu-search">
+                <input type="text" id="menuSearch" placeholder="Search drinks or food...">
+              </div>
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-tab="drinks">Drinks</button>
+                <button class="tab-btn" data-tab="food">Food</button>
+            </div>
+            <a href="https://wa.me/919876543210?text=Hi%20I%20want%20to%20order%20from%20Bari%20Bari%20Cafe"
+                class="whatsapp-float"
+                target="_blank">
+                <i class="fab fa-whatsapp" title="click to order on whatsapp"></i>
+            </a>
+            
+            <div class="menu-grid drinks-grid active">
+                <div class="menu-card animate-slide-up">
+                    <img src="Images/biscoff.jpg" alt="Biscoff Shake">
+                    <div class="menu-info">
+                        <h3>Biscoff Shake</h3>
+                        <p>A delicious blend of our premium espresso and Biscoff cookies</p><br>(350 ml)
+                        <div class="menu-price">Rs. 350/-</div>
+                    </div>
+                    <a class="order-btn"
+                        href="https://wa.me/919624695831?text=Hi%20I%20want%20to%20order%20Biscoff%20Shake"
+                        target="_blank">
+
+                        Order on WhatsApp
+
+                    </a>
+                </div>
+                <div class="menu-card animate-slide-up delay-1">
+                    <img src="Images/brownie.jpg" alt="Brownie Shake">
+                    <div class="menu-info">
+                        <h3>Brownie Shake</h3>
+                        <p>A rich and creamy shake made with our signature brownie</p><br>(350 ml)
+                        <div class="menu-price">Rs. 340/-</div>
+                    </div>
+                </div>
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/ferrero.jpg" alt="Ferrero Rocher Shake">
+                    <div class="menu-info">
+                        <h3>Ferrero Rocher Shake</h3>
+                        <p>A decadent shake infused with Ferrero Rocher chocolates</p><br>(350 ml)
+                        <div class="menu-price">Rs. 380/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/kitkat_shake.jpg" alt="KitKat Shake">
+                    <div class="menu-info">
+                        <h3>KitKat Shake</h3>
+                        <p>A decadent shake infused with KitKat chocolates</p><br>(350 ml)
+                        <div class="menu-price">Rs. 320/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/oreo.jpg" alt="Oreo Shake">
+                    <div class="menu-info">
+                        <h3>Oreo Shake</h3>
+                        <p>A decadent shake infused with Oreo cookies</p><br>(350 ml)
+                        <div class="menu-price">Rs. 320/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/vanilla-milkshake2.webp" alt="Vanilla Milkshake">
+                    <div class="menu-info">
+                        <h3>Vanilla Milkshake</h3>
+                        <p>A classic creamy milkshake</p><br>(350 ml)
+                        <div class="menu-price">Rs. 250/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/strawberry.jpg" alt="Strawberry Milkshake">
+                    <div class="menu-info">
+                        <h3>Strawberry Milkshake</h3>
+                        <p>A refreshing milkshake with fresh strawberry flavor</p><br>(350 ml)
+                        <div class="menu-price">Rs. 280/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/photo-1572490122747-3968b75cc699.avif" alt="Chocolate Milkshake">
+                    <div class="menu-info">
+                        <h3>Chocolate Milkshake</h3>
+                        <p>A rich and indulgent milkshake</p><br>(350 ml)
+                        <div class="menu-price">Rs. 280/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/orange_juice.jpg" alt="Orange Juice">
+                    <div class="menu-info">
+                        <h3>Orange Juice</h3>
+                        <p>A refreshing glass of fresh orange juice</p><br>(200 ml)
+                        <div class="menu-price">Rs. 250/-</div>
+                    </div>
+                </div>
+
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/watermelon_juice.jpg" alt="Watermelon Juice">
+                    <div class="menu-info">
+                        <h3>Watermelon Juice</h3>
+                        <p>A refreshing glass of fresh watermelon juice</p><br>(200 ml)
+                        <div class="menu-price">Rs. 250/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/pineapple.jpg" alt="Pineapple Juice">
+                    <div class="menu-info">
+                        <h3>Pineapple Juice</h3>
+                        <p>A refreshing glass of fresh pineapple juice</p><br>(200 ml)
+                        <div class="menu-price">Rs. 250/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/rooted_orange_juice.jpg" alt="Rooted Orange Juice">
+                    <div class="menu-info">
+                        <h3>Rooted Orange Juice</h3>
+                        <p>A refreshing glass of fresh rooted orange juice</p><br>(200 ml)
+                        <div class="menu-price">Rs. 250/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/photo-1572490122747-3968b75cc699.avif" alt="Chocolate Milkshake">
+                    <div class="menu-info">
+                        <h3>Chocolate Milkshake</h3>
+                        <p>A rich and indulgent milkshake</p><br>(350 ml)
+                        <div class="menu-price">Rs. 280/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/pineapple_flush.jpg" alt="Pineapple Flush">
+                    <div class="menu-info">
+                        <h3>Pineapple Flush</h3>
+                        <p>A refreshing blend of fresh pineapple,cucumber, Green apple, Lime and mint juice</p><br>(200 ml)
+                        <div class="menu-price">Rs. 270/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/Enenrgy_booster_abc juice.jpg" alt="Energy Booster ABC Juice">
+                    <div class="menu-info">
+                        <h3>Energy Booster ABC Juice</h3>
+                        <p>A revitalizing blend of apple, beetroot, and carrot juice</p><br>(200 ml)
+                        <div class="menu-price">Rs. 280/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/cranberry_mojito.jpg" alt="Cranberry Mojito">
+                    <div class="menu-info">
+                        <h3>Cranberry Mojito</h3>
+                        <p>A refreshing blend of cranberry, mint, and lime juice</p><br>(350 ml)
+                        <div class="menu-price">Rs. 260/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/guava_corinder_mojito.jpg" alt="Guava Coriander Mojito">
+                    <div class="menu-info">
+                        <h3>Guava Coriander Mojito</h3>
+                        <p>A refreshing blend of guava, coriander, and lime juice</p><br>(400 ml)
+                        <div class="menu-price">Rs. 290/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/mint_mojito.jpg" alt="Mint Mojito">
+                    <div class="menu-info">
+                        <h3>Classic Mint Mojito</h3>
+                        <p>A refreshing blend of mint, lime, and soda</p><br>(350 ml)
+                        <div class="menu-price">Rs. 230/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/orange_basil_mojito.jpg" alt="Orange Basil Mojito">
+                    <div class="menu-info">
+                        <h3>Orange Basil Mojito</h3>
+                        <p>A refreshing blend of orange, basil, and lime juice</p><br>(350 ml)
+                        <div class="menu-price">Rs. 300/-</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="Images/watermelon_mojito.jpg" alt="Watermelon Mojito">
+                    <div class="menu-info">
+                        <h3>Watermelon Mojito</h3>
+                        <p>A refreshing blend of watermelon, mint, and lime juice</p><br>(350 ml)
+                        <div class="menu-price">Rs. 280/-</div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="menu-grid food-grid">
+                <div class="menu-card animate-slide-up">
+                    <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?w=400&h=300&fit=crop" alt="Croissant">
+                    <div class="menu-info">
+                        <h3>Butter Croissant</h3>
+                        <p>Freshly baked, flaky perfection</p>
+                        <div class="menu-price">$3.75</div>
+                    </div>
+                </div>
+                <div class="menu-card animate-slide-up delay-1">
+                    <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=300&fit=crop" alt="Avocado Toast">
+                    <div class="menu-info">
+                        <h3>Avocado Toast</h3>
+                        <p>Smashed avocado on sourdough</p>
+                        <div class="menu-price">$8.50</div>
+                    </div>
+                </div>
+
+                <div class="menu-card animate-slide-up delay-2">
+                    <img src="https://images.unsplash.com/photo-1541599468178-c4bd3c3c148c?w=400&h=300&fit=crop" alt="Muffin">
+                    <div class="menu-info">
+                        <h3>Blueberry Muffin</h3>
+                        <p>Moist muffin packed with fresh blueberries</p>
+                        <div class="menu-price">$4.25</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <button id="prevBtn">Prev</button>
+            <span id="pageNumbers"></span>
+            <button id="nextBtn">Next</button>
+        </div>
+
+    </section>
+
+    <!-- About Page -->
+    <section id="about" class="page">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text animate-slide-up">
+                    <h2 class="section-title">Our Story</h2>
+                    <p>Bari Bari was born from a passion for exceptional coffee and creating memorable experiences. Founded in 2018, our cafe has become a neighborhood favorite for its artisanal coffee, fresh pastries, and warm hospitality.</p>
+                    <p>We source only the finest beans from sustainable farms and roast them in small batches to ensure maximum freshness and flavor.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>500+</h3>
+                            <span>Cups Served Daily</span>
+                        </div>
+                        <div class="stat">
+                            <h3>50+</h3>
+                            <span>Bean Varieties</span>
+                        </div>
+                        <div class="stat">
+                            <h3>5★</h3>
+                            <span>Customer Rating</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image animate-slide-up delay-1">
+                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&h=400&fit=crop" alt="Cafe Interior">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Page -->
+    <section id="contact" class="page">
+        <div class="container">
+            <h2 class="section-title animate-fade-in">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-slide-up">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Visit Us</h4>
+                            <p>FF 01 - Setu Eventi, Umashankar Joshi Marg, Chimanlal Girdharlal Road, Navrangpura, Ahmedabad</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Call Us</h4>
+                            <p>+91 9898856007</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>hello@beanhaven.com</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form animate-slide-up delay-1" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" placeholder="Your Name" required>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" placeholder="Your Email" required>
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        <i class="fas fa-comment"></i>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-coffee"></i> Bari Bari</h3>
+                    <p>Your favorite spot for premium coffee and cozy vibes.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Bari Bari Cafe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
