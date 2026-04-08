@@ -284,7 +284,7 @@ card.style.display = "none";
 
 });
 
-const cards = document.querySelectorAll(".menu-card");
+const cards = document.querySelectorAll(".drinks-grid .menu-card");
 const itemsPerPage = 6;
 let currentPage = 1;
 
